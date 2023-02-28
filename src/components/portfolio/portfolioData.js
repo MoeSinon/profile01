@@ -91,7 +91,6 @@ const PortfolioData = [
         preview: "#",
         link:
           <Document
-            //文件路径,
             file= "../../../public/assets/pdf-1.pdf"
             //加载成功调用 
             onLoadSuccess={<div>加载成功!</div>} //加载失败调用 
