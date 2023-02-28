@@ -1,21 +1,28 @@
 import React, { useState } from "react";
+import { CreativePageBanner } from "../../components/PageBanner";
 import Modal from "react-modal";
 import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
 import cancelImg from "../../../public/assets/img/cancel.svg";
 import AboutMain from "../about";
 import Image from "next/image";
 
+const typingData = [
+  "<strong>Amateur Full Stack designer</strong>",
+  "<strong>Web designer</strong>",
+  "<strong>amateur front-end development engineer</strong>",
+  "<strong>amateur back-end development engineer</strong>",
+  "<strong>Buyer</strong>",
+  "<strong>Foreign trade beginner</strong>",
+  "<strong>`Amateur Full Stack designer``Web designer``Buyer``Foreign trade beginner`</strong >",
+];
+
 const heroContent = {
-  heroImage: "/assets/img/hero/dark.jpg",
+  heroImage: "/assets/img/hero/hro.jpg",
   heroMobileImage: heroImgMobile,
-  heroTitleName: "steve milner",
-  heroDesignation: "web designer",
-  heroDescriptions: `I'm a Tunisian based web designer & front‑end developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
-  building excellent software that improves the lives of those
-  around me.`,
+  heroDescriptions: <CreativePageBanner pageName={"I'M LI"} extraClass="typed-subtitle" typingData={typingData} />,
   heroBtn: "more about me",
 };
+
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,10 +46,8 @@ const Hero = () => {
               // style={{width:'100%',height:'100%'}}
             />
             <h1 className="text-uppercase poppins-font">
-              {"I'm"} {heroContent.heroTitleName}.
-              <span>{heroContent.heroDesignation}</span>
+              {heroContent.heroDescriptions}
             </h1>
-            <p className="open-sans-font">{heroContent.heroDescriptions}</p>
             <button className="button" onClick={toggleModalOne}>
               <span className="button-text">{heroContent.heroBtn}</span>
               <span className="button-icon fa fa-arrow-right"></span>

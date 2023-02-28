@@ -1,22 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef,useState} from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
-
+  const [buttondisable, setbuttondisable] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        "service_8jwvwt2",
+        "template_yu0r7c8",
         form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        "9jnBkLxGah4brqmh0"
       )
       .then(
         (result) => {
+          setbuttondisable(true)
           console.log(result)
           toast.success("Message Sent Successfully!", {
             position: "top-right",
@@ -30,6 +31,7 @@ const Contact = () => {
           document.getElementById("myForm").reset();
         },
         (error) => {
+          setbuttondisable(false)
           toast.error("Ops Message Not Sent!", {
             position: "top-right",
             autoClose: 2000,
@@ -90,8 +92,11 @@ const Contact = () => {
           {/* End .col */}
 
           <div className="col-12">
-            <button type="submit" className="button">
-              <span className="button-text">Send Message</span>
+            <button type="submit" className="button" disabled={buttondisable}>
+              <span className="button-text">
+              {
+                  buttondisable == false ? "SEND EMAIL TO ME" : "DO NOT CLICK QUICKLY"
+              }</span>
               <span className="button-icon fa fa-send"></span>
             </button>
           </div>

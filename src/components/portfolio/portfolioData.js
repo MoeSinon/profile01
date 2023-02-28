@@ -11,17 +11,17 @@ import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
 const PortfolioData = [
   {
     id: 1,
-    type: "mockup project",
+    type: "chatgpt spy",
     image: Image1,
-    tag: ["mockup"],
+    tag: ["website"],
     delayAnimation: "0",
     modalDetails: [
       {
-        project: "Website",
-        client: "Envato",
+        project: "chatgpy",
+        client: "me",
         language: "HTML, CSS, Javascript",
-        preview: "www.envato.com",
-        link: "https://www.envato.com/",
+        preview: "null",
+        link: "https://chatgpt.cyberpunk2077.eu.org/",
       },
     ],
   },

@@ -2,25 +2,35 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   2018 - Present",
-    position: " Web Developer",
-    compnayName: "Envato",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "2022",
+    position: "Freelance",
+    compnayName: "Yurun Group Co.",
+    details: `The previous bad experience made me feel very disappointed,
+    I have attempted to take the entrance exam for Computer Science and Technology Master degree (major in software engineering 408),
+    during this period I learn programming in depth,
+    I can make foreign trade independent website,
+    I learn to make unity game,WeChat mini game, 
+    I made fitness app,
+    I think I can start again.`
   },
   {
-    year: "2013 - 2018",
-    position: " UI/UX Designer",
-    compnayName: "Themeforest",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    year: "2021",
+    position: "Sourcing Engineer",
+    compnayName: "Yurun Group Co.",
+    details: `I received an offer from Yurun Group.
+    But unfortunately it went into bankruptcy and reorganization`,
   },
   {
-    year: "2005 - 2013",
-    position: "Consultant",
-    compnayName: "Videohive",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "2020",
+    position: "Curtain wall structure verification",
+    compnayName: "China Construction Third Bureau Decoration Co.",
+    details: `I entered the China Construction System, 
+    I did my professional counterpart, structural design, 
+    but I did not feel satisfied, 
+    I hope to do some achievement work can make me go farther.
+    However,
+    I was involved in two assignments,
+    the structural verification of Nanjing Yangtze River International Convention and Exhibition Center and Hefei CITIC Bank.`,
   },
 ];
 
