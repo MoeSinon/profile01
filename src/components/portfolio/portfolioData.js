@@ -7,8 +7,6 @@ import Image6 from "../../../public/assets/img/portfolio/project-6.jpg";
 import Image7 from "../../../public/assets/img/portfolio/project-7.jpg";
 import Image8 from "../../../public/assets/img/portfolio/project-8.jpg";
 import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
-import pdf1 from "../../../public/assets/pdf-1.pdf";
-
 import { Document, Page, pdfjs } from 'react-pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
@@ -94,7 +92,7 @@ const PortfolioData = [
         link:
           <Document
             //文件路径,
-            file= {pdf1}
+            file= "../../../public/assets/pdf-1.pdf"
             //加载成功调用 
             onLoadSuccess={<div>加载成功!</div>} //加载失败调用 
             onLoadError={<div>加载失败!</div>} //加载提示 
