@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "react-pdf":"^6.2.2",
     "jarallax": "^2.0.4",
     "typed.js":"^2.0.12",
     "@emailjs/browser": "^3.9.1",

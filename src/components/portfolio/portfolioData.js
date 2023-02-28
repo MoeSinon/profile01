@@ -7,6 +7,12 @@ import Image6 from "../../../public/assets/img/portfolio/project-6.jpg";
 import Image7 from "../../../public/assets/img/portfolio/project-7.jpg";
 import Image8 from "../../../public/assets/img/portfolio/project-8.jpg";
 import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
+import pdf1 from "../../../public/assets/pdf-1.pdf";
+
+import { Document, Page, pdfjs } from 'react-pdf'
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+
 
 const PortfolioData = [
   {
@@ -75,17 +81,27 @@ const PortfolioData = [
   },
   {
     id: 5,
-    type: "saas project",
+    type: "AMAT market value analysis",
     image: Image5,
-    tag: ["logo"],
+    tag: ["document"],
     delayAnimation: "100",
     modalDetails: [
       {
-        project: "Web Application",
-        client: "Themeforest",
-        language: "HTML, CSS, ReactJS",
-        preview: "www.envato.com",
-        link: "https://themeforest.net/item/deski-saas-software-react-template/33799794",
+        project: "AMAT analysis report",
+        client: "me",
+        language: "pdf",
+        preview: "#",
+        link:
+          <Document
+            //文件路径,
+            file= {pdf1}
+            //加载成功调用 
+            onLoadSuccess={<div>加载成功!</div>} //加载失败调用 
+            onLoadError={<div>加载失败!</div>} //加载提示 
+            loading={<div>Please wait!</div>}>
+            <Page pageNumber={pageNumber} />
+          </Document>
+        ,
       },
     ],
   },
