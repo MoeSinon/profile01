@@ -97,7 +97,6 @@ const PortfolioData = [
             onLoadSuccess={<div>加载成功!</div>} //加载失败调用 
             onLoadError={<div>加载失败!</div>} //加载提示 
             loading={<div>Please wait!</div>}>
-            <Page pageNumber={pageNumber} />
           </Document>
         ,
       },
