@@ -20,6 +20,7 @@ const ModalFive = ({ modalId, setGetModal }) => {
                 {item.modalDetails.map((details, i) => {
                   return (
                     <div key={i} className="row open-sans-font">
+                      
                       <div className="col-12 col-sm-6 mb-2">
                         <i className="fa fa-file-text-o pr-2"></i>
                         Project:{" "}
@@ -48,7 +49,6 @@ const ModalFive = ({ modalId, setGetModal }) => {
                           className="preview-link"
                           target="_blank"
                           rel="noopener noreferrer nofollow"
-                          href={details.link}
                         >
                           {details.preview}
                         </a>
