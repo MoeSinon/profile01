@@ -57,9 +57,9 @@ const ModalEight = ({ modalId, setGetModal }) => {
                   );
                 })}
               </div>
-              <figure className="modal__img">
-                <Image src={item.image} alt="portfolio project demo" />
-              </figure>
+   
+                {item.image}
+              
 
               <button
                 className="close-modal"

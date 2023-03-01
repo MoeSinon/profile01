@@ -23,6 +23,7 @@ const Portfolio = () => {
             <Tab>VIDEO</Tab>
             <Tab>GRAPHIC GAME</Tab>
             <Tab>WEBSITE</Tab>
+            <Tab>PPT</Tab>
           </TabList>
 
           <div className="container">
@@ -163,6 +164,36 @@ const Portfolio = () => {
                 })}
               </div>
             </TabPanel>
+
+            <TabPanel>
+              <div className="tab-container">
+                
+                {PortfolioData.filter((item) => item.tag.includes("PPT")).map(
+                  (item) => {
+                    const { id, type, image, delayAnimation } = item;
+                    return (
+                      <div
+                        key={id}
+                        data-aos="fade-right"
+                        data-aos-delay={delayAnimation}
+                      >
+                        <div
+                          className="tab-content"
+                          onClick={() => handleModal(id)}
+                        >
+                          {image}
+                          <h3>
+                            <span className="conent-title">{type}</span>
+                          </h3>
+                        </div>
+                        {/* {getModal && <Modal props={modalId} />} */}
+                      </div>
+                    );
+                  }
+                )}
+              </div>
+            </TabPanel>
+
           </div>
         </Tabs>
       </div>
