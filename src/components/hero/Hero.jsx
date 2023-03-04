@@ -13,7 +13,12 @@ const typingData = [
   "<strong>amateur back-end development engineer</strong>",
   "<strong>Buyer</strong>",
   "<strong>Foreign trade beginner</strong>",
-  "<strong>`Amateur Full Stack designer``Web designer``Buyer``Foreign trade beginner`</strong >",
+  `  <strong>
+  Amateur Full Stack designer 
+  Web designer 
+  Buyer 
+  Foreign trade beginner
+  </strong >` ,
 ];
 
 const heroContent = {
@@ -43,7 +48,7 @@ const Hero = () => {
               src={heroContent.heroMobileImage}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
-              // style={{width:'100%',height:'100%'}}
+            // style={{width:'100%',height:'100%'}}
             />
             <h1 className="text-uppercase poppins-font">
               {heroContent.heroDescriptions}
