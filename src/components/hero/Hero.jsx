@@ -24,7 +24,7 @@ const typingData = [
 const heroContent = {
   heroImage: "/assets/img/hero/hro.jpg",
   heroMobileImage: heroImgMobile,
-  heroDescriptions: <CreativePageBanner pageName={"https://1drv.ms/p/s!Ap6KLz-jH0_PjQ2orlMm21cloAaT?e=S8h80F"} extraClass="typed-subtitle" typingData={typingData} />,
+  heroDescriptions: <CreativePageBanner pageName={"I'M LI"} extraClass="typed-subtitle" typingData={typingData} />,
   heroBtn: "more about me",
 };
 
