@@ -124,8 +124,8 @@ const PortfolioData = [
     id: 8,
     type: "ppt",
     image:
-      `<iframe
-        src="<iframe src="https://onedrive.live.com/embed?resid=CF4F1FA33F2F8A9E%211677&amp;authkey=%21ALc05feRfmzNAwI&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">这是嵌入 <a target="_blank" href="https://office.com">Microsoft Office</a> 演示文稿，由 <a target="_blank" href="https://office.com/webapps">Office</a> 提供支持。</iframe>`,
+      <iframe
+        src="https://onedrive.live.com/embed?resid=CF4F1FA33F2F8A9E%211677&amp;authkey=!ALc05feRfmzNAwI&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1&amp" width="400px" height="225px" frameborder="0">这是嵌入 <a target="_blank" href="https://office.com" rel="noreferrer">Microsoft Office</a> 演示文稿，由 <a target="_blank" href="https://office.com/webapps" rel="noreferrer">Office</a> 提供支持。</iframe>,
     tag: ["ppt"],
     delayAnimation: "200",
     modalDetails: [
